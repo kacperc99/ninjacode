@@ -1,0 +1,45 @@
+@keyframes Backz {
+    0%{background-position:93% 0%;}
+    50%{background-position:0% 100%;}
+    100%{background-position:93% 0%;}
+}
+@-o-keyframes Backz {
+    0%{background-position:93% 0%;}
+    50%{background-position:0% 100%;}
+    100%{background-position:93% 0%;}
+}
+@-webkit-keyframes Backz {
+    0%{background-position:93% 0%;}
+    50%{background-position:0% 100%;}
+    100%{background-position:93% 0%;}
+}
+@-moz-keyframes Backz {
+    0%{background-position:93% 0%;}
+    50%{background-position:0% 100%;}
+    100%{background-position:93% 0%;}
+}
+@keyframes launch {
+    from {top: 20%;
+    opacity: 0.0;}
+    to {top: 50%;
+    opacity: 100%;}
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial, Helvetica', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+width: 100%;
+min-height: 100vh;
+background-size: 600% 600%;
+background: linear-gradient(110deg, #800080, #0000FF);
+animation: Backz 1s ease 1s infinite reverse forwards;
+-o-animation: Backz 1s ease infinite;
+-moz-animation: Backz 1s ease infinite;
+-webkit-animation: Backz 1s ease infinite;
+animation-name: Backz;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+}

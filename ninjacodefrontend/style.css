@@ -1,0 +1,50 @@
+@import "stylemain.css";
+.form{
+width: 80%;
+max-width: 200px;
+height: 500px;
+align-items: center;
+background-color: white;
+border: 100px black;
+border-radius: 10px;
+border-color: black;
+margin: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%,-50%);
+padding: 40px 40px 40px 40px;
+animation-name: launch;
+animation-duration: 3s;
+animation-iteration-count: 1;
+display: flex;
+flex-wrap: wrap;
+}
+.form h1{
+font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+font-size: large;
+}
+.form h2{
+font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+font-size: medium;
+margin-top: 20px;
+align-self: center;
+}
+.form input{
+width: 100%;
+min-width: 100px;
+margin-top: 20px;
+border-radius: 10px;
+text-align: center;
+}
+.form button{
+right: 25%;
+-ms-transform: translateX(25%);
+transform: translateX(25%);
+margin-top: 20px;
+width: 50%;
+min-width: 80px;
+border-radius: 10px;
+display: inline;
+}

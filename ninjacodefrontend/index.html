@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <meta name="author" content="Kacper Celary">
+        <meta name="application-name" content="Task">
+        <meta name="description" content="Qualification task for Ninjacode.it">
+        <title>Registration page</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="form">
+                <h1 style="text-align: center">Registration</h1>
+                <h2 style="text-align: center">Name</h2>
+                <input type="text"  id="name" placeholder="add name">
+                <h2 style="text-align: center">Surname</h2>
+                <input type="text" id="surname" placeholder="add surname">
+                <h2 style="text-align: center">E-mail</h2>
+                <input type="text" id="email" placeholder="add mail">
+                <button onclick="send()" id="send">Wyślij</button>
+                <h2 style="text-align: center; vertical-align: bottom;" id="error"></h2>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
