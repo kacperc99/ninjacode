@@ -1,6 +1,8 @@
 const username = document.getElementById("name");
 const usersurname = document.getElementById("surname");
 const useremail = document.getElementById("email");
+var validRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
 
 function send() {
   if (username.value === '') {
@@ -15,6 +17,10 @@ function send() {
 
   if (useremail.value === '') {
     document.getElementById('error').innerText = 'no e-mail provided';
+    return;
+  }
+  if (!useremail.value.match(validRegex)) {
+    document.getElementById('error').innerText = 'invalid e-mail';
     return;
   }
 
